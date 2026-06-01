@@ -24,6 +24,7 @@ A data analytics project looking at how annual members and casual riders use Cyc
 
 ---
 
+
 ## Project Overview
 
 This project uses Cyclistic's 2021 trip data to understand how **annual members** and **casual riders** behave differently. The findings are presented in an interactive Power BI dashboard, supported by SQL queries and Excel validation.
@@ -39,6 +40,8 @@ Cyclistic wants to grow its annual memberships. To do that, the marketing team n
 - Where should marketing efforts actually be focused?
 
 ---
+## Dataset
+The dataset is publically available [here](https://divvy-tripdata.s3.amazonaws.com/index.html)
 
 ## Tools Used
 
@@ -121,7 +124,7 @@ SQL scripts are in the [`SQL/`](./SQL/) folder.
 - Hourly trends
 - Bike type preferences
 
-There's also a slicer to filter by rider type, month, or day. Screenshots are in the [`Dashboard_Images/`](./Dashboard_Images/) folder.
+There's also  filter by rider type Screenshots are in the [`Dashboard_Images/`](./Dashboard_Images/) folder.
 
 ---
 
@@ -134,8 +137,6 @@ Total Member Users = CALCULATE(COUNTROWS(bike_data), bike_data[member_casual] = 
 
 Total Casual Users = CALCULATE(COUNTROWS(bike_data), bike_data[member_casual] = "casual")
 ```
-
-Full list of measures is in the [`PowerBI/`](./PowerBI/) folder.
 
 ---
 
@@ -182,9 +183,7 @@ Full list of measures is in the [`PowerBI/`](./PowerBI/) folder.
 Cyclistic-Bike-Share-Analysis/
 │
 ├── README.md
-├── Dataset/
 ├── SQL/
-├── PowerBI/
 ├── Dashboard_Images/
 └── Insights/
 ```
